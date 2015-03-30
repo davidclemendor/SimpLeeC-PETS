@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Expenses" representedClassName="Expenses" syncable="YES">
+        <attribute name="expenseAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="expenseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="expenseOutlet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expenseType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expenseWhy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Expenses" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>

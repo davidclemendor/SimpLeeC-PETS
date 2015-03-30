@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E0977B01912ACD2008099B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977AF1912ACD2008099B3 /* Foundation.framework */; };
+		7E0977B21912ACD2008099B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977B11912ACD2008099B3 /* CoreGraphics.framework */; };
+		7E0977B41912ACD2008099B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977B31912ACD2008099B3 /* UIKit.framework */; };
+		7E0977B61912ACD2008099B3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977B51912ACD2008099B3 /* CoreData.framework */; };
+		7E0977BC1912ACD2008099B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E0977BA1912ACD2008099B3 /* InfoPlist.strings */; };
+		7E0977BE1912ACD2008099B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0977BD1912ACD2008099B3 /* main.m */; };
+		7E0977C21912ACD2008099B3 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0977C11912ACD2008099B3 /* SLAppDelegate.m */; };
+		7E0977C51912ACD2008099B3 /* Simplee_Expenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E0977C31912ACD2008099B3 /* Simplee_Expenses.xcdatamodeld */; };
+		7E0977C71912ACD2008099B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0977C61912ACD2008099B3 /* Images.xcassets */; };
+		7E0977CE1912ACD2008099B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977CD1912ACD2008099B3 /* XCTest.framework */; };
+		7E0977CF1912ACD2008099B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977AF1912ACD2008099B3 /* Foundation.framework */; };
+		7E0977D01912ACD2008099B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977B31912ACD2008099B3 /* UIKit.framework */; };
+		7E0977D11912ACD2008099B3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0977B51912ACD2008099B3 /* CoreData.framework */; };
+		7E0977D91912ACD2008099B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E0977D71912ACD2008099B3 /* InfoPlist.strings */; };
+		7E0977DB1912ACD2008099B3 /* Simplee_ExpensesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0977DA1912ACD2008099B3 /* Simplee_ExpensesTests.m */; };
+		7E0977E61912B2A4008099B3 /* Expenses.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0977E51912B2A4008099B3 /* Expenses.m */; };
+		7E0977E81912B3B5008099B3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0977E71912B3B5008099B3 /* Storyboard.storyboard */; };
+		7E0977EB1912B771008099B3 /* SLExpenseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0977EA1912B771008099B3 /* SLExpenseTableViewController.m */; };
+		7E2BAFC2192557000048C081 /* SLExpenseWhyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2BAFC1192557000048C081 /* SLExpenseWhyTableViewController.m */; };
+		7E2BAFC4192574A30048C081 /* Reasons.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E2BAFC3192574A30048C081 /* Reasons.json */; };
+		7E5C7D1519131AE300198652 /* SLCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C7D1419131AE300198652 /* SLCoreViewController.m */; };
+		7E5C7D1819131C4B00198652 /* SLDatePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C7D1719131C4B00198652 /* SLDatePickViewController.m */; };
+		7E5C7D1B19131F2C00198652 /* SLAddExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C7D1A19131F2C00198652 /* SLAddExpenseViewController.m */; };
+		7E5C7D1E19133F9C00198652 /* SLShowTotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C7D1D19133F9C00198652 /* SLShowTotalViewController.m */; };
+		7E5D064E193533EE007E3F26 /* 44-shoebox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5D064D193533EE007E3F26 /* 44-shoebox.png */; };
+		7E5D0650193534B4007E3F26 /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5D064F193534B4007E3F26 /* 20-gear2.png */; };
+		7E5D0652193534C2007E3F26 /* 40-inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5D0651193534C2007E3F26 /* 40-inbox.png */; };
+		7E65444F191685FB00CEADCE /* SLExpenseCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E65444E191685FB00CEADCE /* SLExpenseCategoryTableViewController.m */; };
+		7E6544521916C34A00CEADCE /* SLExpenseVendorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6544511916C34A00CEADCE /* SLExpenseVendorTableViewController.m */; };
+		7E6544551916E22700CEADCE /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E6544541916E22700CEADCE /* Category.json */; };
+		7E708FEA191D17B2009F2A88 /* SLCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E708FE9191D17B2009F2A88 /* SLCustomTableViewCell.m */; };
+		7E7330FD1936253A004B9EA2 /* E30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7330FC1936253A004B9EA2 /* E30.png */; };
+		7E7B704B19191ABC00F585CC /* SLReadExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B704A19191ABC00F585CC /* SLReadExpenseViewController.m */; };
+		7E7B704E1919468800F585CC /* SLUtilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B704D1919468800F585CC /* SLUtilityViewController.m */; };
+		7E7B705019194E4300F585CC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7B704F19194E4300F585CC /* MessageUI.framework */; };
+		7EF4994A192CD25A004E6C56 /* Vendors.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EF49949192CD25A004E6C56 /* Vendors.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E0977D21912ACD2008099B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E0977A41912ACD2008099B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E0977AB1912ACD2008099B3;
+			remoteInfo = "Simplee Expenses";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E0977AC1912ACD2008099B3 /* PersonalEXP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalEXP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0977AF1912ACD2008099B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E0977B11912ACD2008099B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E0977B31912ACD2008099B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E0977B51912ACD2008099B3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7E0977B91912ACD2008099B3 /* PersonalEXP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersonalEXP-Info.plist"; sourceTree = "<group>"; };
+		7E0977BB1912ACD2008099B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E0977BD1912ACD2008099B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E0977BF1912ACD2008099B3 /* PersonalEXP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonalEXP-Prefix.pch"; sourceTree = "<group>"; };
+		7E0977C01912ACD2008099B3 /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		7E0977C11912ACD2008099B3 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		7E0977C41912ACD2008099B3 /* Simplee_Expenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simplee_Expenses.xcdatamodel; sourceTree = "<group>"; };
+		7E0977C61912ACD2008099B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E0977CC1912ACD2008099B3 /* PersonalEXPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalEXPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0977CD1912ACD2008099B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7E0977D61912ACD2008099B3 /* PersonalEXPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersonalEXPTests-Info.plist"; sourceTree = "<group>"; };
+		7E0977D81912ACD2008099B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E0977DA1912ACD2008099B3 /* Simplee_ExpensesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simplee_ExpensesTests.m; sourceTree = "<group>"; };
+		7E0977E41912B2A4008099B3 /* Expenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Expenses.h; path = "Simplee Expenses/Expenses.h"; sourceTree = "<group>"; };
+		7E0977E51912B2A4008099B3 /* Expenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Expenses.m; path = "Simplee Expenses/Expenses.m"; sourceTree = "<group>"; };
+		7E0977E71912B3B5008099B3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		7E0977E91912B771008099B3 /* SLExpenseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLExpenseTableViewController.h; sourceTree = "<group>"; };
+		7E0977EA1912B771008099B3 /* SLExpenseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLExpenseTableViewController.m; sourceTree = "<group>"; };
+		7E2BAFC0192557000048C081 /* SLExpenseWhyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLExpenseWhyTableViewController.h; sourceTree = "<group>"; };
+		7E2BAFC1192557000048C081 /* SLExpenseWhyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLExpenseWhyTableViewController.m; sourceTree = "<group>"; };
+		7E2BAFC3192574A30048C081 /* Reasons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Reasons.json; path = ../../Desktop/Reasons.json; sourceTree = "<group>"; };
+		7E5C7D1319131AE300198652 /* SLCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLCoreViewController.h; sourceTree = "<group>"; };
+		7E5C7D1419131AE300198652 /* SLCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLCoreViewController.m; sourceTree = "<group>"; };
+		7E5C7D1619131C4B00198652 /* SLDatePickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDatePickViewController.h; sourceTree = "<group>"; };
+		7E5C7D1719131C4B00198652 /* SLDatePickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDatePickViewController.m; sourceTree = "<group>"; };
+		7E5C7D1919131F2C00198652 /* SLAddExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAddExpenseViewController.h; sourceTree = "<group>"; };
+		7E5C7D1A19131F2C00198652 /* SLAddExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAddExpenseViewController.m; sourceTree = "<group>"; };
+		7E5C7D1C19133F9C00198652 /* SLShowTotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLShowTotalViewController.h; sourceTree = "<group>"; };
+		7E5C7D1D19133F9C00198652 /* SLShowTotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLShowTotalViewController.m; sourceTree = "<group>"; };
+		7E5D064D193533EE007E3F26 /* 44-shoebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "44-shoebox.png"; path = "../../glyphish-icons/PNG icons/44-shoebox.png"; sourceTree = "<group>"; };
+		7E5D064F193534B4007E3F26 /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "20-gear2.png"; path = "../../glyphish-icons/PNG icons/20-gear2.png"; sourceTree = "<group>"; };
+		7E5D0651193534C2007E3F26 /* 40-inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "40-inbox.png"; path = "../../glyphish-icons/PNG icons/40-inbox.png"; sourceTree = "<group>"; };
+		7E65444D191685FB00CEADCE /* SLExpenseCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLExpenseCategoryTableViewController.h; sourceTree = "<group>"; };
+		7E65444E191685FB00CEADCE /* SLExpenseCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLExpenseCategoryTableViewController.m; sourceTree = "<group>"; };
+		7E6544501916C34A00CEADCE /* SLExpenseVendorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLExpenseVendorTableViewController.h; sourceTree = "<group>"; };
+		7E6544511916C34A00CEADCE /* SLExpenseVendorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLExpenseVendorTableViewController.m; sourceTree = "<group>"; };
+		7E6544541916E22700CEADCE /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Category.json; path = ../../Desktop/Category.json; sourceTree = "<group>"; };
+		7E708FE8191D17B2009F2A88 /* SLCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLCustomTableViewCell.h; sourceTree = "<group>"; };
+		7E708FE9191D17B2009F2A88 /* SLCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLCustomTableViewCell.m; sourceTree = "<group>"; };
+		7E7330FC1936253A004B9EA2 /* E30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E30.png; path = ../../Desktop/E30.png; sourceTree = "<group>"; };
+		7E7B704919191ABC00F585CC /* SLReadExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLReadExpenseViewController.h; sourceTree = "<group>"; };
+		7E7B704A19191ABC00F585CC /* SLReadExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLReadExpenseViewController.m; sourceTree = "<group>"; };
+		7E7B704C1919468800F585CC /* SLUtilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLUtilityViewController.h; sourceTree = "<group>"; };
+		7E7B704D1919468800F585CC /* SLUtilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLUtilityViewController.m; sourceTree = "<group>"; };
+		7E7B704F19194E4300F585CC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7EF49949192CD25A004E6C56 /* Vendors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Vendors.json; path = ../../Desktop/Vendors.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E0977A91912ACD2008099B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7B705019194E4300F585CC /* MessageUI.framework in Frameworks */,
+				7E0977B21912ACD2008099B3 /* CoreGraphics.framework in Frameworks */,
+				7E0977B61912ACD2008099B3 /* CoreData.framework in Frameworks */,
+				7E0977B41912ACD2008099B3 /* UIKit.framework in Frameworks */,
+				7E0977B01912ACD2008099B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0977C91912ACD2008099B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0977CE1912ACD2008099B3 /* XCTest.framework in Frameworks */,
+				7E0977D11912ACD2008099B3 /* CoreData.framework in Frameworks */,
+				7E0977D01912ACD2008099B3 /* UIKit.framework in Frameworks */,
+				7E0977CF1912ACD2008099B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E0977A31912ACD2008099B3 = {
+			isa = PBXGroup;
+			children = (
+				7E0977E71912B3B5008099B3 /* Storyboard.storyboard */,
+				7E0977C31912ACD2008099B3 /* Simplee_Expenses.xcdatamodeld */,
+				7E708FE8191D17B2009F2A88 /* SLCustomTableViewCell.h */,
+				7E708FE9191D17B2009F2A88 /* SLCustomTableViewCell.m */,
+				7E7B704C1919468800F585CC /* SLUtilityViewController.h */,
+				7E7B704D1919468800F585CC /* SLUtilityViewController.m */,
+				7E7B704919191ABC00F585CC /* SLReadExpenseViewController.h */,
+				7E7B704A19191ABC00F585CC /* SLReadExpenseViewController.m */,
+				7E5F590119182EA300438235 /* Table View Controllers */,
+				7E5F590019182E7900438235 /* View Controllers */,
+				7E9E5A921947B9120039A37E /* Images */,
+				7E6544531916E20F00CEADCE /* Data */,
+				7E0977B71912ACD2008099B3 /* Simplee Expenses */,
+				7E0977D41912ACD2008099B3 /* Simplee ExpensesTests */,
+				7E0977AE1912ACD2008099B3 /* Frameworks */,
+				7E0977AD1912ACD2008099B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E0977AD1912ACD2008099B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E0977AC1912ACD2008099B3 /* PersonalEXP.app */,
+				7E0977CC1912ACD2008099B3 /* PersonalEXPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E0977AE1912ACD2008099B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7B704F19194E4300F585CC /* MessageUI.framework */,
+				7E0977AF1912ACD2008099B3 /* Foundation.framework */,
+				7E0977B11912ACD2008099B3 /* CoreGraphics.framework */,
+				7E0977B31912ACD2008099B3 /* UIKit.framework */,
+				7E0977B51912ACD2008099B3 /* CoreData.framework */,
+				7E0977CD1912ACD2008099B3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0977B71912ACD2008099B3 /* Simplee Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				7E0977C01912ACD2008099B3 /* SLAppDelegate.h */,
+				7E0977C11912ACD2008099B3 /* SLAppDelegate.m */,
+				7E0977C61912ACD2008099B3 /* Images.xcassets */,
+				7E0977B81912ACD2008099B3 /* Supporting Files */,
+			);
+			path = "Simplee Expenses";
+			sourceTree = "<group>";
+		};
+		7E0977B81912ACD2008099B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E0977B91912ACD2008099B3 /* PersonalEXP-Info.plist */,
+				7E0977BA1912ACD2008099B3 /* InfoPlist.strings */,
+				7E0977BD1912ACD2008099B3 /* main.m */,
+				7E0977BF1912ACD2008099B3 /* PersonalEXP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E0977D41912ACD2008099B3 /* Simplee ExpensesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E0977DA1912ACD2008099B3 /* Simplee_ExpensesTests.m */,
+				7E0977D51912ACD2008099B3 /* Supporting Files */,
+			);
+			path = "Simplee ExpensesTests";
+			sourceTree = "<group>";
+		};
+		7E0977D51912ACD2008099B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E0977D61912ACD2008099B3 /* PersonalEXPTests-Info.plist */,
+				7E0977D71912ACD2008099B3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E5F590019182E7900438235 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E5C7D1319131AE300198652 /* SLCoreViewController.h */,
+				7E5C7D1419131AE300198652 /* SLCoreViewController.m */,
+				7E5C7D1619131C4B00198652 /* SLDatePickViewController.h */,
+				7E5C7D1719131C4B00198652 /* SLDatePickViewController.m */,
+				7E5C7D1919131F2C00198652 /* SLAddExpenseViewController.h */,
+				7E5C7D1A19131F2C00198652 /* SLAddExpenseViewController.m */,
+				7E5C7D1C19133F9C00198652 /* SLShowTotalViewController.h */,
+				7E5C7D1D19133F9C00198652 /* SLShowTotalViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E5F590119182EA300438235 /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E2BAFC0192557000048C081 /* SLExpenseWhyTableViewController.h */,
+				7E2BAFC1192557000048C081 /* SLExpenseWhyTableViewController.m */,
+				7E0977E91912B771008099B3 /* SLExpenseTableViewController.h */,
+				7E0977EA1912B771008099B3 /* SLExpenseTableViewController.m */,
+				7E6544501916C34A00CEADCE /* SLExpenseVendorTableViewController.h */,
+				7E6544511916C34A00CEADCE /* SLExpenseVendorTableViewController.m */,
+				7E65444D191685FB00CEADCE /* SLExpenseCategoryTableViewController.h */,
+				7E65444E191685FB00CEADCE /* SLExpenseCategoryTableViewController.m */,
+			);
+			name = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		7E6544531916E20F00CEADCE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7EF49949192CD25A004E6C56 /* Vendors.json */,
+				7E0977E41912B2A4008099B3 /* Expenses.h */,
+				7E0977E51912B2A4008099B3 /* Expenses.m */,
+				7E2BAFC3192574A30048C081 /* Reasons.json */,
+				7E6544541916E22700CEADCE /* Category.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		7E9E5A921947B9120039A37E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E5D064D193533EE007E3F26 /* 44-shoebox.png */,
+				7E5D064F193534B4007E3F26 /* 20-gear2.png */,
+				7E5D0651193534C2007E3F26 /* 40-inbox.png */,
+				7E7330FC1936253A004B9EA2 /* E30.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E0977AB1912ACD2008099B3 /* PersonalEXP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0977DE1912ACD2008099B3 /* Build configuration list for PBXNativeTarget "PersonalEXP" */;
+			buildPhases = (
+				7E0977A81912ACD2008099B3 /* Sources */,
+				7E0977A91912ACD2008099B3 /* Frameworks */,
+				7E0977AA1912ACD2008099B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalEXP;
+			productName = "Simplee Expenses";
+			productReference = 7E0977AC1912ACD2008099B3 /* PersonalEXP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E0977CB1912ACD2008099B3 /* PersonalEXPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0977E11912ACD2008099B3 /* Build configuration list for PBXNativeTarget "PersonalEXPTests" */;
+			buildPhases = (
+				7E0977C81912ACD2008099B3 /* Sources */,
+				7E0977C91912ACD2008099B3 /* Frameworks */,
+				7E0977CA1912ACD2008099B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E0977D31912ACD2008099B3 /* PBXTargetDependency */,
+			);
+			name = PersonalEXPTests;
+			productName = "Simplee ExpensesTests";
+			productReference = 7E0977CC1912ACD2008099B3 /* PersonalEXPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E0977A41912ACD2008099B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Endless Possibilities Finite Solutions Inc";
+				TargetAttributes = {
+					7E0977CB1912ACD2008099B3 = {
+						TestTargetID = 7E0977AB1912ACD2008099B3;
+					};
+				};
+			};
+			buildConfigurationList = 7E0977A71912ACD2008099B3 /* Build configuration list for PBXProject "PersonalEXP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E0977A31912ACD2008099B3;
+			productRefGroup = 7E0977AD1912ACD2008099B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E0977AB1912ACD2008099B3 /* PersonalEXP */,
+				7E0977CB1912ACD2008099B3 /* PersonalEXPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E0977AA1912ACD2008099B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7330FD1936253A004B9EA2 /* E30.png in Resources */,
+				7E0977BC1912ACD2008099B3 /* InfoPlist.strings in Resources */,
+				7EF4994A192CD25A004E6C56 /* Vendors.json in Resources */,
+				7E2BAFC4192574A30048C081 /* Reasons.json in Resources */,
+				7E5D0650193534B4007E3F26 /* 20-gear2.png in Resources */,
+				7E0977C71912ACD2008099B3 /* Images.xcassets in Resources */,
+				7E5D064E193533EE007E3F26 /* 44-shoebox.png in Resources */,
+				7E0977E81912B3B5008099B3 /* Storyboard.storyboard in Resources */,
+				7E5D0652193534C2007E3F26 /* 40-inbox.png in Resources */,
+				7E6544551916E22700CEADCE /* Category.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0977CA1912ACD2008099B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0977D91912ACD2008099B3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E0977A81912ACD2008099B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0977EB1912B771008099B3 /* SLExpenseTableViewController.m in Sources */,
+				7E0977E61912B2A4008099B3 /* Expenses.m in Sources */,
+				7E5C7D1819131C4B00198652 /* SLDatePickViewController.m in Sources */,
+				7E0977C51912ACD2008099B3 /* Simplee_Expenses.xcdatamodeld in Sources */,
+				7E6544521916C34A00CEADCE /* SLExpenseVendorTableViewController.m in Sources */,
+				7E0977BE1912ACD2008099B3 /* main.m in Sources */,
+				7E2BAFC2192557000048C081 /* SLExpenseWhyTableViewController.m in Sources */,
+				7E65444F191685FB00CEADCE /* SLExpenseCategoryTableViewController.m in Sources */,
+				7E5C7D1519131AE300198652 /* SLCoreViewController.m in Sources */,
+				7E5C7D1B19131F2C00198652 /* SLAddExpenseViewController.m in Sources */,
+				7E5C7D1E19133F9C00198652 /* SLShowTotalViewController.m in Sources */,
+				7E7B704B19191ABC00F585CC /* SLReadExpenseViewController.m in Sources */,
+				7E0977C21912ACD2008099B3 /* SLAppDelegate.m in Sources */,
+				7E7B704E1919468800F585CC /* SLUtilityViewController.m in Sources */,
+				7E708FEA191D17B2009F2A88 /* SLCustomTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0977C81912ACD2008099B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0977DB1912ACD2008099B3 /* Simplee_ExpensesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E0977D31912ACD2008099B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E0977AB1912ACD2008099B3 /* PersonalEXP */;
+			targetProxy = 7E0977D21912ACD2008099B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E0977BA1912ACD2008099B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0977BB1912ACD2008099B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E0977D71912ACD2008099B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0977D81912ACD2008099B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E0977DC1912ACD2008099B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Clemendor (GFU75FWDKS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Clemendor (GFU75FWDKS)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5BC2C09D-7F8F-4809-BB58-2A1735A07F2B";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E0977DD1912ACD2008099B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Clemendor (GFU75FWDKS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Clemendor (GFU75FWDKS)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "5BC2C09D-7F8F-4809-BB58-2A1735A07F2B";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E0977DF1912ACD2008099B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simplee Expenses/PersonalEXP-Prefix.pch";
+				INFOPLIST_FILE = "Simplee Expenses/PersonalEXP-Info.plist";
+				PRODUCT_NAME = PersonalEXP;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E0977E01912ACD2008099B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simplee Expenses/PersonalEXP-Prefix.pch";
+				INFOPLIST_FILE = "Simplee Expenses/PersonalEXP-Info.plist";
+				PRODUCT_NAME = PersonalEXP;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7E0977E21912ACD2008099B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simplee Expenses.app/Simplee Expenses";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simplee Expenses/Simplee Expenses-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simplee ExpensesTests/PersonalEXPTests-Info.plist";
+				PRODUCT_NAME = PersonalEXPTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7E0977E31912ACD2008099B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simplee Expenses.app/Simplee Expenses";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simplee Expenses/Simplee Expenses-Prefix.pch";
+				INFOPLIST_FILE = "Simplee ExpensesTests/PersonalEXPTests-Info.plist";
+				PRODUCT_NAME = PersonalEXPTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E0977A71912ACD2008099B3 /* Build configuration list for PBXProject "PersonalEXP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0977DC1912ACD2008099B3 /* Debug */,
+				7E0977DD1912ACD2008099B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0977DE1912ACD2008099B3 /* Build configuration list for PBXNativeTarget "PersonalEXP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0977DF1912ACD2008099B3 /* Debug */,
+				7E0977E01912ACD2008099B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0977E11912ACD2008099B3 /* Build configuration list for PBXNativeTarget "PersonalEXPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0977E21912ACD2008099B3 /* Debug */,
+				7E0977E31912ACD2008099B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E0977C31912ACD2008099B3 /* Simplee_Expenses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E0977C41912ACD2008099B3 /* Simplee_Expenses.xcdatamodel */,
+			);
+			currentVersion = 7E0977C41912ACD2008099B3 /* Simplee_Expenses.xcdatamodel */;
+			name = Simplee_Expenses.xcdatamodeld;
+			path = "Simplee Expenses/Simplee_Expenses.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E0977A41912ACD2008099B3 /* Project object */;
+}
